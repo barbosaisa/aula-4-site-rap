@@ -1,0 +1,95 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* ======================== */
+.faq {
+	max-width: 200px;
+	height:480px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+    color: #dbdee1;
+	background-color: #b4adad1a;
+	padding: 25px;
+	border-radius: 9px;
+	position:absolute;
+
+}
+.faq__title {
+    color: #020202;;
+	margin-bottom: 20px;
+}
+.faq__separator {
+	border: 1px solid rgb(214, 215, 216);
+	border-bottom: none;
+}
+.faq__item {
+	border-radius: 15px;
+	transition: background-color 0.25s;
+}
+.faq__item:hover,
+.faq__item:focus,
+.faq__item--expanded {
+	background-color: #1E1F22;
+}
+.faq__question {
+	position: relative;
+	display: block;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	width: 100%;
+	color: #fff;
+	font: inhet;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px 48px;
+}
+.faq__icon {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	font-size: 24px;
+	transition: transform 0.25s;
+}
+.faq__question[aria-expanded='true'] .faq__icon {
+	transform: translateY(-50%) rotate(90deg);
+}
+.faq__answer {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.25s;
+}
+.faq__answer[aria-hidden='false'] {
+	grid-template-rows: 1fr;
+}
+.faq__answer-inner {
+	overflow: hidden;
+}
+.faq__answer-text {
+	padding: 0 16px 16px;
+}
+
+.spotify{
+	width: 800%;
+	position: center;
+	
+}
+.tx{
+	right: 300px;
+    width: 600%;
+    margin-left: 35%;
+	height: 100px;
+	font-size: 90%;
+	color: azure
+	;
+
+}
+	
